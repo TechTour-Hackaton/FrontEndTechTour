@@ -4,6 +4,8 @@ import { HeaderComponent } from './modules/home/header/header.component';
 import { MainComponent } from './modules/home/main/main.component';
 import { LoginComponent } from './modules/authentication/login/login.component';
 import { ListDestinationsComponent } from './modules/destination/list-destinations/list-destinations.component';
+import { ListOrderComponent } from './modules/shopping-cart/list-order/list-order.component';
+import { OrderComponent } from './modules/shopping-cart/order/order.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'main',pathMatch:'full'},
@@ -11,6 +13,8 @@ const routes: Routes = [
   {path: 'main',component: MainComponent},
   {path: 'login',component: LoginComponent},
   {path: 'list-destinations',component: ListDestinationsComponent},
+  {path: 'list-order',component: ListOrderComponent},
+  {path: 'order',component: OrderComponent},
 ];
 
 @NgModule({

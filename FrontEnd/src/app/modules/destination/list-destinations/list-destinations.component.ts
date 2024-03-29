@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
@@ -87,9 +86,6 @@ export class ListDestinationsComponent {
   constructor() {}
 
   ngOnInit(): void {
-  }
-
-  onPageChange(event: any) {
   }
 
   redirectToOtherComponent(row: any) {

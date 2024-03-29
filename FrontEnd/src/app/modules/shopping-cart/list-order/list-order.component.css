@@ -1,0 +1,30 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #15294c;
+    font-weight: bold;
+  }
+  .table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .table {
+    width: 84%;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  
+  .custom-header {
+      background-color: #15294c !important;
+      color: #ffffff;
+    }
+    
+  
+  .custom-cell {
+    background-color: #f0eded;
+  }
+  
