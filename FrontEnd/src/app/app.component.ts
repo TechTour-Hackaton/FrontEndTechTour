@@ -19,9 +19,10 @@ export class AppComponent {
   isSpecialPage(): boolean {
     const currentUrl = this.router.url;
     const loginUrl = '/login';
+    const registerUrl = '/register';
 
     // Verificar si la ruta actual es "/login" o "/recover"
-    if (currentUrl === loginUrl ) {
+    if (currentUrl === loginUrl || currentUrl === registerUrl) {
       return true;
     }
 
