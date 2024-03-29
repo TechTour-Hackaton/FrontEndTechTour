@@ -17,11 +17,15 @@
 }
 
 .custom-header {
-    background-color: #15294c !important;
-    color: #ffffff;
-  }
-  
+  background-color: #15294c !important;
+  color: #ffffff;
+}
 
 .custom-cell {
   background-color: #f0eded;
+}
+
+.mat-row:hover {
+  background-color: #e0e0e0; 
+  cursor: pointer; 
 }

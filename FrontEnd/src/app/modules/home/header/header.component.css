@@ -2,6 +2,7 @@
   background-color: #15294c;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .head-logo{
     display: flex;

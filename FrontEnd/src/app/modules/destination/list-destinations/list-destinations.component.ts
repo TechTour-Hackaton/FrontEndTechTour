@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-list-destinations',
@@ -83,11 +85,13 @@ export class ListDestinationsComponent {
 
 
 
-  constructor() {}
+  constructor(private router: Router) { }
+
 
   ngOnInit(): void {
   }
 
   redirectToOtherComponent(row: any) {
+    this.router.navigate(['/info-destination']);
   }
 }

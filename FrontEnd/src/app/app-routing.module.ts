@@ -6,6 +6,7 @@ import { LoginComponent } from './modules/authentication/login/login.component';
 import { ListDestinationsComponent } from './modules/destination/list-destinations/list-destinations.component';
 import { ListOrderComponent } from './modules/shopping-cart/list-order/list-order.component';
 import { OrderComponent } from './modules/shopping-cart/order/order.component';
+import { InfoDestinationComponent } from './modules/destination/info-destination/info-destination.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'main',pathMatch:'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'main',component: MainComponent},
   {path: 'login',component: LoginComponent},
   {path: 'list-destinations',component: ListDestinationsComponent},
+  {path: 'info-destination',component: InfoDestinationComponent},
   {path: 'list-order',component: ListOrderComponent},
   {path: 'order',component: OrderComponent},
 ];
