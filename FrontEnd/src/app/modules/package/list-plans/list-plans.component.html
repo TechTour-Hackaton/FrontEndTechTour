@@ -18,12 +18,24 @@
         </slide>
      </carousel> -->
 
+    <button id="shoppingCart" onclick="window.location.href='/order';">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+
     <div class="categoryContainer">
         <div class="subTitlePlansContainer">
             <i class="fa-solid fa-hotel"></i>
             <h2 class="subTitlePlans">HOTELES</h2>
         </div>
-        <div class="carruselContainer">
+        <div class="navButtons">
+            <button (click)="scrollLeft()" class="carousel-control-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button (click)="scrollRight()" class="carousel-control-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="carruselContainer" #carruselRef>
             <!-- <app-plan-details *ngFor="let plan of plans; let i = index;" [plan]="plan" [index]="i"></app-plan-details> -->
             <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -104,7 +116,15 @@
             <i class="fa-solid fa-plane"></i>
             <h2 class="subTitlePlans">TOURS</h2>
         </div>
-        <div class="carruselContainer">
+        <div class="navButtons">
+            <button (click)="scrollLeft()" class="carousel-control-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button (click)="scrollRight()" class="carousel-control-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="carruselContainer" #carruselRef>
             <div class="package-card">
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/65/fd/let-explore-happyness.jpg?w=1000&h=-1&s=1"
                     alt="">
