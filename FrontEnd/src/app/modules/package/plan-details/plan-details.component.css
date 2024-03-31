@@ -24,6 +24,7 @@
 
 #headerInfo img{
     width: 90%;
+    border-radius: 50%;
 }
 
 .chart{
