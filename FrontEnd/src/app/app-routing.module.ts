@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './modules/home/header/header.component';
 import { MainComponent } from './modules/home/main/main.component';
 import { LoginComponent } from './modules/authentication/login/login.component';
+import { ListPlansComponent } from './modules/package/list-plans/list-plans.component';
+import { PlanDetailsComponent } from './modules/package/plan-details/plan-details.component';
 import { ListDestinationsComponent } from './modules/destination/list-destinations/list-destinations.component';
 import { ListOrderComponent } from './modules/shopping-cart/list-order/list-order.component';
 import { OrderComponent } from './modules/shopping-cart/order/order.component';
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path: 'main',component: MainComponent},
   {path: 'login',component: LoginComponent},
   {path: 'register',component: RegisterComponent},
+  {path: 'list-packages',component: ListPlansComponent},
+  {path: 'info-package',component: PlanDetailsComponent},
   {path: 'list-destinations',component: ListDestinationsComponent},
   {path: 'info-destination',component: InfoDestinationComponent},
   {path: 'list-order',component: ListOrderComponent},
