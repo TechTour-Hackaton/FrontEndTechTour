@@ -1,0 +1,60 @@
+<div class="title">Resumen de compra</div>
+
+<div class="table-container">
+  <div class="table">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">
+          Descripción
+        </th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.descripcion }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="cantidad">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">
+          Cantidad
+        </th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.cantidad }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="precio">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">
+          Precio unitario
+        </th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.precio }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="total">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">Total</th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.total }}
+        </td>
+      </ng-container>
+
+      <tr
+        mat-header-row
+        *matHeaderRowDef="['descripcion', 'cantidad', 'precio', 'total']"
+      ></tr>
+      <tr
+        mat-row
+        *matRowDef="
+          let row;
+          columns: ['descripcion', 'cantidad', 'precio', 'total']
+        "
+        (click)="redirectToOtherComponent(row)"
+      ></tr>
+    </table>
+  </div>
+</div>
+
+<div class="button-user">
+  <button class="button-icon" onclick="window.location.href='/login';">
+    <i class="fas fa-check"></i>
+  </button>
+</div>

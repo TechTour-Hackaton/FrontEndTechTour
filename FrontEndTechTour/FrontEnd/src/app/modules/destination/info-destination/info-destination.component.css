@@ -1,0 +1,42 @@
+.destination-title img {
+  width: 50%;
+}
+.destination-title {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.destination-title h1 {
+  font-size: 115px;
+  font-weight: bold;
+  color: #15294c;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #15294c;
+  font-weight: bold;
+  background-color: #e2e2e2;
+  margin-bottom: 2%;
+}
+.content-first{
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+}
+.content-second{
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+}
+.info-item{
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+}

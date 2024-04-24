@@ -1,0 +1,223 @@
+<div class="title">Arma tu Paquete</div>
+
+<div id="list-plans-container">
+    <!-- <carousel>
+        <slide>
+          <img src="link_to_image_1" alt="First slide">
+          <div class="carousel-caption">
+            <h3>Primer elemento</h3>
+            <p>Descripción del primer elemento.</p>
+          </div>
+        </slide>
+        <slide>
+          <img src="link_to_image_2" alt="Second slide">
+          <div class="carousel-caption">
+            <h3>Segundo elemento</h3>
+            <p>Descripción del segundo elemento.</p>
+          </div>
+        </slide>
+     </carousel> -->
+
+    <button id="shoppingCart" onclick="window.location.href='/order';">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+
+    <div class="categoryContainer">
+        <div class="subTitlePlansContainer">
+            <i class="fa-solid fa-hotel"></i>
+            <h2 class="subTitlePlans">HOTELES</h2>
+        </div>
+        <div class="navButtons">
+            <button (click)="scrollLeft()" class="carousel-control-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button (click)="scrollRight()" class="carousel-control-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="carruselContainer" #carruselRef>
+            <!-- <app-plan-details *ngFor="let plan of plans; let i = index;" [plan]="plan" [index]="i"></app-plan-details> -->
+            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="https://saposyprincesas.elmundo.es/wp-content/uploads/2020/11/hoteles-de-costa-rica-riu-guanacaste.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Tarjeta 1</h5>
+                        <p class="card-text">Alguna descripción rápida de la tarjeta como contenido.</p>
+                        <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Siguiente</span>
+                </a>
+              </div> -->
+            <div class="package-card">
+                <img src="https://saposyprincesas.elmundo.es/wp-content/uploads/2020/11/hoteles-de-costa-rica-riu-guanacaste.jpg"
+                    alt="">
+                <h3>Hotel TechTour</h3>
+                <button onclick="window.location.href='/info-package';">
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://saposyprincesas.elmundo.es/wp-content/uploads/2020/11/hoteles-de-costa-rica-riu-guanacaste.jpg"
+                    alt="">
+                <h3>Hotel TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://saposyprincesas.elmundo.es/wp-content/uploads/2020/11/hoteles-de-costa-rica-riu-guanacaste.jpg"
+                    alt="">
+                <h3>Hotel TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://saposyprincesas.elmundo.es/wp-content/uploads/2020/11/hoteles-de-costa-rica-riu-guanacaste.jpg"
+                    alt="">
+                <h3>Hotel TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://saposyprincesas.elmundo.es/wp-content/uploads/2020/11/hoteles-de-costa-rica-riu-guanacaste.jpg"
+                    alt="">
+                <h3>Hotel TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="categoryContainer">
+        <div class="subTitlePlansContainer">
+            <i class="fa-solid fa-plane"></i>
+            <h2 class="subTitlePlans">TOURS</h2>
+        </div>
+        <div class="navButtons">
+            <button (click)="scrollLeft()" class="carousel-control-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button (click)="scrollRight()" class="carousel-control-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="carruselContainer" #carruselRef>
+            <div class="package-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/65/fd/let-explore-happyness.jpg?w=1000&h=-1&s=1"
+                    alt="">
+                <h3>Tour TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/65/fd/let-explore-happyness.jpg?w=1000&h=-1&s=1"
+                    alt="">
+                <h3>Tour TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/65/fd/let-explore-happyness.jpg?w=1000&h=-1&s=1"
+                    alt="">
+                <h3>Tour TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/65/fd/let-explore-happyness.jpg?w=1000&h=-1&s=1"
+                    alt="">
+                <h3>Tour TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/65/fd/let-explore-happyness.jpg?w=1000&h=-1&s=1"
+                    alt="">
+                <h3>Tour TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="categoryContainer">
+        <div class="subTitlePlansContainer">
+            <i class="fa-solid fa-utensils"></i>
+            <h2 class="subTitlePlans">RESTAURANTES</h2>
+        </div>
+        <div class="carruselContainer">
+            <div class="package-card">
+                <img src="https://resizer.otstatic.com/v2/photos/wide-huge/2/27723998.jpg" alt="">
+                <h3>Restaurante TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://resizer.otstatic.com/v2/photos/wide-huge/2/27723998.jpg" alt="">
+                <h3>Restaurante TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://resizer.otstatic.com/v2/photos/wide-huge/2/27723998.jpg" alt="">
+                <h3>Restaurante TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://resizer.otstatic.com/v2/photos/wide-huge/2/27723998.jpg" alt="">
+                <h3>Restaurante TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+            <div class="package-card">
+                <img src="https://resizer.otstatic.com/v2/photos/wide-huge/2/27723998.jpg" alt="">
+                <h3>Restaurante TechTour</h3>
+                <button>
+                    VER MAS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

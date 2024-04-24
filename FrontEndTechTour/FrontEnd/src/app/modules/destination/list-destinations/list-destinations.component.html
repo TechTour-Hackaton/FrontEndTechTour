@@ -1,0 +1,74 @@
+<div class="title">Destinos</div>
+
+<div class="table-container">
+  <div class="table">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="Lugar">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">Lugar</th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.lugar }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="cantidadPlanes">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">
+          Cantidad de planes
+        </th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.cantidadPlanes }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="valor">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">
+          Valor aproximado
+        </th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.valor }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="atractivoTuristico">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">
+          Atractivo turistico
+        </th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.atractivoTuristico }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="clima">
+        <th mat-header-cell *matHeaderCellDef class="custom-header">Clima</th>
+        <td mat-cell *matCellDef="let element" class="custom-cell">
+          {{ element.clima }}
+        </td>
+      </ng-container>
+
+      <tr
+        mat-header-row
+        *matHeaderRowDef="[
+          'Lugar',
+          'cantidadPlanes',
+          'valor',
+          'atractivoTuristico',
+          'clima'
+        ]"
+      ></tr>
+      <tr
+        mat-row
+        *matRowDef="
+          let row;
+          columns: [
+            'Lugar',
+            'cantidadPlanes',
+            'valor',
+            'atractivoTuristico',
+            'clima'
+          ]
+        "
+        (click)="redirectToOtherComponent(row)"
+        [style.cursor]="'pointer'" 
+      ></tr>
+    </table>
+  </div>
+</div>

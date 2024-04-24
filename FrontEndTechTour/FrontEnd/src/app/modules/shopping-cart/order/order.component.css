@@ -1,0 +1,46 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #15294c;
+  font-weight: bold;
+}
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  width: 84%;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.custom-header {
+  background-color: #15294c !important;
+  color: #ffffff;
+}
+
+.custom-cell {
+  background-color: #f0eded;
+}
+
+.button-user{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 90%;
+    font-size: xxx-large;
+    margin-right: 2%;
+    color: white;
+    border-radius: 10px;
+}
+.button-icon {
+    margin-right: 5px;
+    font-size: 35px; 
+    color:#15294c;
+    background-color: transparent;
+    border-color: transparent;
+}
