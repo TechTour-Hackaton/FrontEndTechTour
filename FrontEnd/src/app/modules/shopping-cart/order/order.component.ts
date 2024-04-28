@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-order',
@@ -7,19 +9,21 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrl: './order.component.css'
 })
 export class OrderComponent {  dataSource = new MatTableDataSource<any>([
-  { descripcion: 'Producto A', cantidad: 10, precio: 20, total: 200 },
-  { descripcion: 'Producto B', cantidad: 5, precio: 30, total: 150 },
-  { descripcion: 'Producto C', cantidad: 8, precio: 25, total: 200 },
-  { descripcion: 'Producto D', cantidad: 12, precio: 15, total: 180 },
-  { descripcion: 'Producto E', cantidad: 6, precio: 40, total: 240 },
-  { descripcion: 'Producto F', cantidad: 15, precio: 10, total: 150 },
-  { descripcion: 'Producto G', cantidad: 20, precio: 8, total: 160 },
-  { descripcion: 'Producto H', cantidad: 3, precio: 50, total: 150 },
-  { descripcion: 'Producto I', cantidad: 7, precio: 35, total: 245 },
-  { descripcion: 'Producto J', cantidad: 9, precio: 28, total: 252 },
+  { descripcion: 'Reserva Hotel', cantidad: 1, precio: 500, total: 500 },
+  { descripcion: 'Tabla de surf', cantidad: 3, precio: 100, total: 300 },
+  { descripcion: 'Balón Volleyball', cantidad: 1, precio: 30, total: 30 },
+  { descripcion: 'Reserva Andres Carne de Res', cantidad: 5, precio: 50, total: 250 },
+  { descripcion: 'Reserva Tour Ciudad Antigua', cantidad: 5, precio: 100, total: 500 },
+  { descripcion: 'Mochila de Camping', cantidad: 2, precio: 75, total: 150 },
+  { descripcion: 'Par Tennis de Montañismo', cantidad: 4, precio: 50, total: 200 },
+  { descripcion: 'Gorra para tour hidrofóbica', cantidad: 1, precio: 50, total: 50 }
 ]);
 
-constructor() {}
+Url: string = 'http://localhost:4200/';
+
+constructor(private http: HttpClient) {
+  
+}
 
 ngOnInit(): void {}
 
